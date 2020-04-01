@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6715FA52434ECE30070E8F9 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6715FA42434ECE30070E8F9 /* WebViewController.swift */; };
 		C68E92F824338DD500857B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68E92F724338DD500857B64 /* AppDelegate.swift */; };
 		C68E92FA24338DD500857B64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68E92F924338DD500857B64 /* SceneDelegate.swift */; };
 		C68E92FC24338DD500857B64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68E92FB24338DD500857B64 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C6715FA42434ECE30070E8F9 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		C68E92F424338DD500857B64 /* Capital Cities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capital Cities.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68E92F724338DD500857B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C68E92F924338DD500857B64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				C68E930024338DD600857B64 /* Assets.xcassets */,
 				C68E930224338DD600857B64 /* LaunchScreen.storyboard */,
 				C68E930524338DD600857B64 /* Info.plist */,
+				C6715FA42434ECE30070E8F9 /* WebViewController.swift */,
 			);
 			path = "capital-cities";
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				C68E92FC24338DD500857B64 /* ViewController.swift in Sources */,
 				C68E92F824338DD500857B64 /* AppDelegate.swift in Sources */,
 				C68E930C24339EF100857B64 /* Capital.swift in Sources */,
+				C6715FA52434ECE30070E8F9 /* WebViewController.swift in Sources */,
 				C68E92FA24338DD500857B64 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
