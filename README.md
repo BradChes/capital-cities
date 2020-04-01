@@ -7,7 +7,10 @@
 Application that shows the locations of capital cities around the world. When one of them is tapped more information is displayed.
 
 ## Examples within this code
-To be filled in.
+- MKMapView
+- MKAnnotation
+- MKPinAnnotationView
+- CLLocationCoordinate2D
 
 ## Demonstration
 To be filled in.
