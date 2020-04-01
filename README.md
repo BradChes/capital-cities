@@ -13,4 +13,9 @@ Application that shows the locations of capital cities around the world. When on
 - CLLocationCoordinate2D
 
 ## Demonstration
-To be filled in.
+Small demonstration as to what the application does on device.
+</br>
+<p align="center">
+<img src="demo/capital-cities.gif" alt="Application demonstration"
+	title="Capital Cities demonstration" width="250" height="500" />
+</p>
