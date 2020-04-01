@@ -33,7 +33,7 @@ extension ViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         guard annotation is Capital else { return nil}
         let identifier = "Capital"
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView
         
         if annotationView == nil {
             annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
@@ -44,7 +44,9 @@ extension ViewController: MKMapViewDelegate {
         } else {
             annotationView?.annotation = annotation
         }
-        
+    
+        annotationView?.pinTintColor = .black
+                
         return annotationView
     }
     
