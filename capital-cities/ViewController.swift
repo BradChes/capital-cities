@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(updateMapTapped))
+
+        
         let london = Capital(title: "London", coordinate: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), info: "Home to the 2012 Summer Olympics.")
         
         let oslo = Capital(title: "Oslo", coordinate: CLLocationCoordinate2D(latitude: 59.95, longitude: 10.75), info: "Founded over a 1000 years ago.")
@@ -26,6 +29,25 @@ class ViewController: UIViewController {
         let washington = Capital(title: "Washington, D.C.", coordinate: CLLocationCoordinate2D(latitude: 38.895111, longitude: -77.036667), info: "Named after George himself.")
         
         mapView.addAnnotations([london, oslo, paris, rome, washington])
+    }
+    
+    @objc func updateMapTapped() {
+        
+        let ac = UIAlertController(title: "Update map type?", message: nil, preferredStyle: .alert)
+            
+        ac.addAction(UIAlertAction(title: "Standard", style: .default, handler: { _ in
+            self.mapView.mapType = .standard
+        }))
+        ac.addAction(UIAlertAction(title: "Satellite", style: .default, handler: { _ in
+            self.mapView.mapType = .satellite
+        }))
+        ac.addAction(UIAlertAction(title: "Hybrid", style: .default, handler: { _ in
+            self.mapView.mapType = .hybrid
+        }))
+        
+        ac.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        
+        present(ac, animated: true)
     }
 }
 
